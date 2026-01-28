@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Member - Doo store</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        body { background-color: #f5f7fb; }
+        .navbar-dark, .footer-dark { background: linear-gradient(90deg, #07142b, #0c1f3f); }
+        
+        .login-container {
+            padding: 80px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .login-card {
+            background: white;
+            border-radius: 12px;
+            padding: 35px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            position: relative;
+            border: 1px solid #eef0f2;
+        }
+
+        .logo-top-box {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #0c1f3f;
+            color: white;
+            padding: 4px 8px;
+            font-weight: bold;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .login-card h5 {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .form-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #444;
+        }
+
+        .form-control {
+            font-size: 0.9rem;
+            padding: 10px;
+            border-radius: 6px;
+            background-color: #fcfdfe;
+        }
+
+        .btn-login {
+            background-color: #fff;
+            color: #555;
+            border: 1px solid #ddd;
+            width: 100%;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+
+        .btn-login:hover {
+            background-color: #f8f9fa;
+        }
+
+        .forgot-password {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            font-size: 0.8rem;
+            color: #adb5bd;
+            text-decoration: none;
+        }
+
+        .register-prompt {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn-register-redirect {
+            background-color: #07142b;
+            color: white;
+            border: none;
+            padding: 8px 25px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f7fb;
+}
+.main-content {
+    flex: 1 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+.footer-dark {
+    background: linear-gradient(90deg, #07142b, #0c1f3f);
+    color: white;
+    margin-top: auto;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Doo store</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="cek-pesanan.html">Cek Pesanan</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="login-container">
+    <div class="login-card">
+        <div class="logo-top-box">TK</div>
+        <h5>Login Member</h5>
+        
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                <input type="text" class="form-control" placeholder="Masukkan Username">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" placeholder="Masukkan Password">
+            </div>
+            <button type="submit" class="btn btn-login">MASUK AKUN MEMBER</button>
+            <a href="index.html" class="forgot-password">Lupa password?</a>
+        </form>
+    </div>
+
+    <div class="register-prompt">
+        <p class="small fw-bold mb-2">Belum Memiliki akun?</p>
+        <a href="daftar.html" class="btn-register-redirect">Daftar Member</a>
+    </div>
+</div>
+
+<footer class="footer-dark text-white pt-5 pb-3">
+<div class="container">
+    <div class="row">
+
+    <!-- Brand / About -->
+    <div class="col-md-4 mb-4">
+        <h4 class="fw-bold mb-2">Doo store</h4>
+        <p class="small mb-3">TOP UP VALORANT TERPERCAYA</p>
+
+        <div class="d-flex gap-3 fs-4">
+        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+        </div>
+    </div>
+
+    <!-- Halaman -->
+    <div class="col-md-3 mb-4">
+        <h6 class="fw-bold mb-3">Halaman</h6>
+        <ul class="list-unstyled small">
+        <li><a href="index.html" class="footer-link">Halaman Utama</a></li>
+        <li><a href="cekP.html" class="footer-link">Cek Pesanan</a></li>
+        </ul>
+    </div>
+
+    <!-- Kontak -->
+    <div class="col-md-3 mb-4">
+        <h6 class="fw-bold mb-3">Kontak</h6>
+        <ul class="list-unstyled small">
+        <li class="mb-2">
+            <i class="bi bi-instagram me-2"></i> @doostore.id
+        </li>
+        <li>
+            <i class="bi bi-whatsapp me-2"></i> +62 895-0958-9675
+        </li>
+        </ul>
+    </div>
+
+    <!-- Member -->
+    <div class="col-md-2 mb-4">
+        <h6 class="fw-bold mb-3">Member</h6>
+        <ul class="list-unstyled small">
+        <li><a href="daftar.html" class="footer-link">Daftar Member</a></li>
+        <li><a href="login.html" class="footer-link">Login Member</a></li>
+        </ul>
+    </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+    <div class="text-center small">
+    Copyright © 2024 Doo store. All Rights Reserved
+    </div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

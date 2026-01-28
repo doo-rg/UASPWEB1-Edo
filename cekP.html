@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cek Status Pesanan - Doo store</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            background-color: #f5f7fb;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar-dark, .footer-dark {
+            background: linear-gradient(90deg, #07142b, #0c1f3f);
+        }
+        
+        .search-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+        .search-card {
+            background-color: #07142b;
+            color: white;
+            border-radius: 8px;
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .search-card .logo-top {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 2px solid white;
+            padding: 2px 5px;
+            line-height: 1;
+        }
+        .search-card h5 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        .form-label {
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        .form-control {
+            border-radius: 4px;
+            padding: 10px;
+        }
+        .btn-cek {
+            background-color: #ced4da;
+            color: #333;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 4px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .btn-cek:hover {
+            background-color: #adb5bd;
+        }
+        .footer-link {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Doo store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="cek-pesanan.html">Cek Pesanan</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="search-container">
+    <div class="search-card">
+        <h5>Cek Status Pesanan</h5>
+        
+        <form>
+            <div class="mb-3">
+                <label for="trx" class="form-label">No. Transaksi</label>
+                <input type="text" class="form-control" id="trx" placeholder="Masukkan No.Transaksi">
+            </div>
+            <button type="submit" class="btn btn-cek">Cek Pesanan</button>
+        </form>
+    </div>
+</div>
+
+<footer class="footer-dark text-white pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h4 class="fw-bold mb-2">Doo store</h4>
+                <p class="small mb-3">TOP UP VALORANT TERPERCAYA</p>
+                <div class="d-flex gap-3 fs-4">
+                    <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h6 class="fw-bold mb-3">Halaman</h6>
+                <ul class="list-unstyled small">
+                    <li><a href="index.html" class="footer-link">Halaman Utama</a></li>
+                    <li><a href="cek-pesanan.html" class="footer-link">Cek Pesanan</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h6 class="fw-bold mb-3">Kontak</h6>
+                <p class="small mb-1"><i class="bi bi-instagram me-2"></i> @doostore.id</p>
+                <p class="small"><i class="bi bi-whatsapp me-2"></i> +62 895-0958-9675</p>
+            </div>
+        </div>
+        <hr class="border-secondary">
+        <div class="text-center small">Copyright © 2024 Doo store. All Rights Reserved</div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
